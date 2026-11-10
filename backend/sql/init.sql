@@ -115,5 +115,6 @@ CREATE TABLE order_items (
         ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
-
-SET FOREIGN_KEY_CHECKS = 1;
+INSERT INTO items (name, description, price) VALUES
+  ('Cơm rang dưa bò', 'Món mẫu để kiểm tra API', 45000),
+  ('Trà đá', 'Dữ liệu mẫu số 2', 5000);
